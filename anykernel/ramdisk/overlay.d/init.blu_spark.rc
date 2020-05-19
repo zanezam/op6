@@ -1,0 +1,13 @@
+# (c) 2018-2020 changes for blu_spark by eng.stk
+
+# Load WLAN driver
+# on booot
+    # exec u:r:magisk:s0 rooot rooot -- /sbin/init.blu_spark_load_wlan_driver.sh
+
+# Set init values
+on property:sys.post_boot.parsed=1
+    setprop vendor.post_boot.parsed 1
+
+on property:vendor.post_boot.parsed=1
+    exec u:r:magisk:s0 root root -- /sbin/init.blu_spark_boot.sh
+
