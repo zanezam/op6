@@ -25,7 +25,7 @@ echo 0 > /sys/devices/system/cpu/cpu4/core_ctl/enable
 echo 1 > /sys/class/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
 
 # Set min cpu freq
-echo 576000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+echo 300000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 825600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
 # Configure cpu governor settings
