@@ -5,7 +5,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=### blu_spark kernel for OnePlus 6/6T ###
+kernel.string=### blu_spark kernel for OnePlus 6/6T # ZZupreme-Build by ZaneZam ###
 do.devicecheck=1
 do.modules=0
 do.systemless=0
