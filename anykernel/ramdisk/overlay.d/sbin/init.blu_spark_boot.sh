@@ -29,14 +29,14 @@ echo 300000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 825600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
 # Configure cpu governor settings
-echo "blu_schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/up_rate_limit_us
-echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/down_rate_limit_us
-echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/iowait_boost_enable
-echo "blu_schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/up_rate_limit_us
-echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/down_rate_limit_us
-echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/iowait_boost_enable
+echo "zzmoove" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+#echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/up_rate_limit_us
+#echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/down_rate_limit_us
+#echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/iowait_boost_enable
+echo "zzmoove" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+#echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/up_rate_limit_us
+#echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/down_rate_limit_us
+#echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/iowait_boost_enable
 
 # Enable OTG by default
 echo 1 > /sys/class/power_supply/usb/otg_switch
