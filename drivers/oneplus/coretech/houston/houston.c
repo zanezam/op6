@@ -174,7 +174,7 @@ void ht_register_thermal_zone_device(struct thermal_zone_device *tzd)
 	/* tzd is guaranteed has value */
 	pr_info("tzd: %s id: %d\n", tzd->type, tzd->id);
 
-	if (!tzd->type)
+	if (tzd->type == NULL)
 		return;
 
 	idx = ht_mapping_tags(tzd->type);

@@ -428,9 +428,9 @@ struct ddr_manufacture {
 };
 //ddr id and ddr name
 static char ddr_version[32] = {0};
-static char ddr_manufacture[20] = {0};
+static char ddr_manufacture[64] = {0};
 char ddr_manufacture_and_fw_verion[40] = {0};
-static char cpu_type[20] = {0};
+static char cpu_type[64] = {0};
 
 struct ddr_manufacture ddr_manufacture_list[] = {
     {1, "Samsung "},

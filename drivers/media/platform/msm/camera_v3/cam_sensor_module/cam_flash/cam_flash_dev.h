@@ -51,8 +51,8 @@
 struct cam_flash_ctrl;
 
 enum cam_flash_switch_trigger_ops {
-	LED_SWITCH_OFF = 0,
-	LED_SWITCH_ON,
+	LED_SWITCH_OFF = NULL,
+	LED_SWITCH_ON = NULL,
 };
 
 enum cam_flash_state {
