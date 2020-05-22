@@ -1295,9 +1295,12 @@ static void fp_detect(struct synaptics_ts_data *ts)
 		/*update tp info*/
 		set_tp_info(ts, 0);
 		gf_opticalfp_irq_handler(0);
-		if (ts->fp_aod_cnt > 0)
+
+		if (ts->fp_aod_cnt > 0) {
 			need_reset = 1;
-			not_getbase = 0;
+		}
+
+		not_getbase = 0;
 		ts->fp_aod_cnt = 0;
 		break;
 	}
@@ -2218,10 +2221,10 @@ static ssize_t synap_write_address(struct file *file, const char __user *buffer,
         {
             TPD_DEBUG("reg=0x%x\n",reg[i]);
         }
-    }
-    else
+    } else {
         block = temp_block;
-	return count;
+    }
+    return count;
 }
 
 #ifdef SUPPORT_GLOVES_MODE
@@ -4690,7 +4693,7 @@ static ssize_t key_switch_read_func(struct file *file, char __user *user_buf, si
 	TPD_ERR("%s left:%s right:%s\n", __func__,
 		    key_switch?"key_back":"key_appselect",
 		    key_switch?"key_appselect":"key_back");
-	ret = snprintf(page, PAGE_SIZE, "key_switch left:%s right:%s\n",
+	ret = snprintf(page, sizeof(PAGE_SIZE), "key_switch left:%s right:%s\n",
 		    key_switch?"key_back":"key_appselect",
 		    key_switch?"key_appselect":"key_back");
 	ret = simple_read_from_buffer(user_buf, count, ppos, page, strlen(page));

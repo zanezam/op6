@@ -43,8 +43,8 @@
 #define CAM_IR_LED_PACKET_OPCODE_ON  1
 
 enum cam_ir_led_switch_trigger_ops {
-	LED_SWITCH_OFF = 0,
-	LED_SWITCH_ON,
+	LED_SWITCH_OFF = NULL,
+	LED_SWITCH_ON = NULL,
 };
 
 enum cam_ir_led_state {
