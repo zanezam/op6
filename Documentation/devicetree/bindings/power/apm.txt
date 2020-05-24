@@ -40,7 +40,7 @@ Required properties:
 - qcom,apm-ctrl:		phandle of APM controller device node
 
 Example:
-	apc_apm: apm@099e0000 {
+	apc_apm: apm@99e0000 {
 		compatible = "qcom,msm-apm";
 		reg = <0x099e0000 0x1000>,
 			<0x09820000 0x10000>,

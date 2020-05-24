@@ -116,7 +116,7 @@ This document describes the bindings that apply for the GFX LDO regulator.
 Example
 =======
 
-	gfx_vreg_corner: ldo@0185f000 {
+	gfx_vreg_corner: ldo@185f000 {
 		compatible = "qcom,msm8953-gfx-ldo";
 		reg = <0x0185f000 0x30>, <0xa0000 0x1000>;
 		reg-names = "ldo_addr", "efuse_addr";

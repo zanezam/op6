@@ -216,7 +216,7 @@ defined in fuses.
 Example
 =======
 
-gfx_cpr: cpr4-ctrl@05061000 {
+gfx_cpr: cpr4-ctrl@5061000 {
 	compatible = "qcom,cpr4-sdm660-mmss-ldo-regulator";
 	reg = <0x05061000 0x4000>, <0x00784000 0x1000>;
 	reg-names = "cpr_ctrl", "fuse_base";

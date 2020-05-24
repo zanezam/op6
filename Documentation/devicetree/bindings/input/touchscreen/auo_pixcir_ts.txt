@@ -11,7 +11,7 @@ Required properties:
 
 Example:
 
-	i2c@00000000 {
+	i2c@0 {
 		/* ... */
 
 		auo_pixcir_ts@5c {

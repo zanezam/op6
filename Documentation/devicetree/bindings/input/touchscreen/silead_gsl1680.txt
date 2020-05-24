@@ -21,7 +21,7 @@ Optional properties:
 
 Example:
 
-i2c@00000000 {
+i2c@0 {
 	gsl1680: touchscreen@40 {
 		compatible = "silead,gsl1680";
 		reg = <0x40>;

@@ -17,7 +17,7 @@ Required properties :
 - #reset-cells : must contain 1
 
 Example:
-ccu: clock@01c20000 {
+ccu: clock@1c20000 {
 	compatible = "allwinner,sun8i-h3-ccu";
 	reg = <0x01c20000 0x400>;
 	clocks = <&osc24M>, <&osc32k>;

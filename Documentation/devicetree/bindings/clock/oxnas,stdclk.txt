@@ -24,7 +24,7 @@ For OX810SE, the clock indices are :
 
 example:
 
-sys: sys-ctrl@000000 {
+sys: sys-ctrl@0 {
 	compatible = "oxsemi,ox810se-sys-ctrl", "syscon", "simple-mfd";
 	reg = <0x000000 0x100000>;
 

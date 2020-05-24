@@ -169,7 +169,7 @@ provided valid line index.
 
 Example:
 
-gpio-controller@00000000 {
+gpio-controller@0 {
 	compatible = "foo";
 	reg = <0x00000000 0x1000>;
 	gpio-controller;

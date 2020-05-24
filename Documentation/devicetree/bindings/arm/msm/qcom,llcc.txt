@@ -91,7 +91,7 @@ compatible devices:
 
 Example:
 
-	qcom,llcc@01300000 {
+	qcom,llcc@1300000 {
 		compatible = "llcc-core", "syscon", "simple-mfd";
 		reg = <0x1300000 0x50000>;
 		reg-names = "llcc_base";

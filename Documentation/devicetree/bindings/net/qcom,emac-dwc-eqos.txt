@@ -37,7 +37,7 @@ Internal emac_emb_smmu:
 Example:
 
 soc {
-	emac_hw: qcom,emac@00020000 {
+	emac_hw: qcom,emac@20000 {
 			compatible = "qcom,emac-dwc-eqos";
 			qcom,arm-smmu;
 			reg = <0x20000 0x10000>,

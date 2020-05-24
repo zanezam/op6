@@ -25,7 +25,7 @@ used in device tree sources.
 
 Example: AO Clock controller node:
 
-	clkc_AO: clock-controller@040 {
+	clkc_AO: clock-controller@40 {
 		compatible = "amlogic,gxbb-aoclkc";
 		reg = <0x0 0x040 0x0 0x4>;
 		#clock-cells = <1>;

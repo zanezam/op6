@@ -28,7 +28,7 @@ Optional properties:
 
 Example:
 
-codec: sgtl5000@0a {
+codec: sgtl5000@a {
 	compatible = "fsl,sgtl5000";
 	reg = <0x0a>;
 	clocks = <&clks 150>;

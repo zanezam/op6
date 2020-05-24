@@ -25,7 +25,7 @@ Optional properties:
 
 Example:
 
-i2c@00000000 {
+i2c@0 {
 	/* ... */
 
 	chipone_icn8318@40 {

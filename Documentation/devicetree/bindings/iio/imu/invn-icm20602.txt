@@ -15,7 +15,7 @@ Optional properties:
  support 8K sample rate.
 
 Example:
-	icm20602-i2c@068 {
+	icm20602-i2c@68 {
 		compatible = "invensense,icm20602";
 		reg = <0x68>;
 		interrupt-parent = <&msm_gpio>;
