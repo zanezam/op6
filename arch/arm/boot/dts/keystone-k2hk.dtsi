@@ -46,7 +46,7 @@
 	soc {
 		/include/ "keystone-k2hk-clocks.dtsi"
 
-		dspgpio0: keystone_dsp_gpio@02620240 {
+		dspgpio0: keystone_dsp_gpio@2620240 {
 			compatible = "ti,keystone-dsp-gpio";
 			gpio-controller;
 			#gpio-cells = <2>;
@@ -102,7 +102,7 @@
 			gpio,syscon-dev = <&devctrl 0x25c>;
 		};
 
-		mdio: mdio@02090300 {
+		mdio: mdio@2090300 {
 			compatible	= "ti,keystone_mdio", "ti,davinci_mdio";
 			#address-cells = <1>;
 			#size-cells = <0>;

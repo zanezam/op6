@@ -185,7 +185,7 @@
 		vdd_pronto_pll-supply = <&pm660_l12>;
 	};
 
-	qcom,wcnss-wlan@0a000000 {
+	qcom,wcnss-wlan@a000000 {
 		/delete-property/ qcom,pronto-vddmx-supply;
 		/delete-property/ qcom,pronto-vddcx-supply;
 		/delete-property/ qcom,pronto-vddpx-supply;

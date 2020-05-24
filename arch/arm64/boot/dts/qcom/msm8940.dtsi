@@ -224,7 +224,7 @@
 };
 
 &soc {
-	ipa_hw: qcom,ipa@07900000 {
+	ipa_hw: qcom,ipa@7900000 {
 		compatible = "qcom,ipa";
 		reg = <0x07900000 0x4effc>, <0x07904000 0x26934>;
 		reg-names = "ipa-base", "bam-base";
@@ -259,14 +259,14 @@
 		qcom,ipa-advertise-sg-support;
 	};
 
-	qcom,rmtfs_sharedmem@00000000 {
+	qcom,rmtfs_sharedmem@0 {
 		reg = <0x00000000 0x00180000>;
 	};
 
 	/* remove 8937 MEM ACC node */
 	/delete-node/ regulator@01946004;
 
-	mem_acc_vreg_corner: regulator@01946004 {
+	mem_acc_vreg_corner: regulator@1946004 {
 		compatible = "qcom,mem-acc-regulator";
 		reg = <0xa4000 0x1000>;
 		reg-names = "efuse_addr";

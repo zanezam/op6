@@ -175,7 +175,7 @@
 			};
 		};
 
-		sdhci@07824000 {
+		sdhci@7824000 {
 			vmmc-supply = <&pm8916_l8>;
 			vqmmc-supply = <&pm8916_l5>;
 
@@ -185,7 +185,7 @@
 			status = "okay";
 		};
 
-		sdhci@07864000 {
+		sdhci@7864000 {
 			vmmc-supply = <&pm8916_l11>;
 			vqmmc-supply = <&pm8916_l12>;
 
@@ -218,7 +218,7 @@
 			pinctrl-0 = <&usb_sw_sel_pm>;
 		};
 
-		lpass@07708000 {
+		lpass@7708000 {
 			status = "okay";
 		};
 

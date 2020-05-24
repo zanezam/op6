@@ -272,7 +272,7 @@
 		#clock-cells = <1>;
 	};
 
-	clock_cpu: qcom,clock-a7@0b010008 {
+	clock_cpu: qcom,clock-a7@b010008 {
 		compatible = "qcom,clock-a7-mdm9607";
 		reg = <0x0b010008 0x8>,
 			<0x000a412c 0x8>;
@@ -393,7 +393,7 @@
 		dma-names = "tx", "rx";
 		status = "disabled";
 
-		wcd9xxx_tomtom_codec@0d{
+		wcd9xxx_tomtom_codec@d {
 			compatible = "qcom,wcd9xxx-i2c";
 			reg = <0x0d>;
 
@@ -456,7 +456,7 @@
 			qcom,cdc-variant = "WCD9330";
 		};
 
-		wcd9xxx_tapan_codec@0d{
+		wcd9xxx_tapan_codec@d {
 			compatible = "qcom,wcd9xxx-i2c";
 			reg = <0x0d>;
 
@@ -663,7 +663,7 @@
 		};
 	};
 
-	android_usb: android_usb@086000c8 {
+	android_usb: android_usb@86000c8 {
 		compatible = "qcom,android-usb";
 		reg = <0x086000c8 0xc8>;
 		qcom,pm-qos-latency = <2 1001 12701>;
@@ -1272,7 +1272,7 @@
 		memory-region = <&modem_adsp_mem>;
 	};
 
-	sdhc_2: sdhci@07864900 {
+	sdhc_2: sdhci@7864900 {
 		compatible = "qcom,sdhci-msm";
 		reg = <0x07864900 0x200>, <0x07864000 0x800>;
 		reg-names = "hc_mem", "core_mem";

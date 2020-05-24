@@ -44,19 +44,19 @@
 
 / {
 	soc {
-		ocram2: sram@00940000 {
+		ocram2: sram@940000 {
 			compatible = "mmio-sram";
 			reg = <0x00940000 0x20000>;
 			clocks = <&clks IMX6QDL_CLK_OCRAM>;
 		};
 
-		ocram3: sram@00960000 {
+		ocram3: sram@960000 {
 			compatible = "mmio-sram";
 			reg = <0x00960000 0x20000>;
 			clocks = <&clks IMX6QDL_CLK_OCRAM>;
 		};
 
-		ipu1: ipu@02400000 {
+		ipu1: ipu@2400000 {
 			compatible = "fsl,imx6qp-ipu", "fsl,imx6q-ipu";
 			clocks = <&clks IMX6QDL_CLK_IPU1>,
 				 <&clks IMX6QDL_CLK_IPU1_DI0>, <&clks IMX6QDL_CLK_IPU1_DI1>,
@@ -69,7 +69,7 @@
 				      "ldb_di0", "ldb_di1", "prg";
 		};
 
-		ipu2: ipu@02800000 {
+		ipu2: ipu@2800000 {
 			compatible = "fsl,imx6qp-ipu", "fsl,imx6q-ipu";
 			clocks = <&clks IMX6QDL_CLK_IPU2>,
 				 <&clks IMX6QDL_CLK_IPU2_DI0>, <&clks IMX6QDL_CLK_IPU2_DI1>,
@@ -82,7 +82,7 @@
 				      "ldb_di0", "ldb_di1", "prg";
 		};
 
-		pcie: pcie@0x01000000 {
+		pcie: pcie@1000000 {
 			compatible = "fsl,imx6qp-pcie", "snps,dw-pcie";
 		};
 	};

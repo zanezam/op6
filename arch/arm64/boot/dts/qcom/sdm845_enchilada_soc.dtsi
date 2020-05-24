@@ -13,7 +13,7 @@
 
 /{
 	reserved-memory {
-		bootloader_log_mem: bootloader_log_mem@0x9FFF7000 {
+		bootloader_log_mem: bootloader_log_mem@9fff7000 {
 			reg = <0 0x9FFF7000 0 0x00100000>;
 			label = "bootloader_log_mem";
 		};
@@ -21,7 +21,7 @@
 			reg = <0 0xAC200000 0 0x00100000>;
 			label = "param_mem";
 		};
-		ramoops: ramoops@0xAC300000 {
+		ramoops: ramoops@ac300000 {
 			compatible = "ramoops";
 			reg = <0 0xAC300000 0 0x00400000>;
 			record-size =  <0x40000>; /*256x1024*/

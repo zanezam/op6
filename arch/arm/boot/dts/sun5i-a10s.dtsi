@@ -90,7 +90,7 @@
 	};
 
 	clocks {
-		ahb_gates: clk@01c20060 {
+		ahb_gates: clk@1c20060 {
 			#clock-cells = <1>;
 			compatible = "allwinner,sun5i-a10s-ahb-gates-clk";
 			reg = <0x01c20060 0x8>;
@@ -119,7 +119,7 @@
 					     "ahb_mali400";
 		};
 
-		apb0_gates: clk@01c20068 {
+		apb0_gates: clk@1c20068 {
 			#clock-cells = <1>;
 			compatible = "allwinner,sun5i-a10s-apb0-gates-clk";
 			reg = <0x01c20068 0x4>;
@@ -132,7 +132,7 @@
 					     "apb0_keypad";
 		};
 
-		apb1_gates: clk@01c2006c {
+		apb1_gates: clk@1c2006c {
 			#clock-cells = <1>;
 			compatible = "allwinner,sun5i-a10s-apb1-gates-clk";
 			reg = <0x01c2006c 0x4>;
@@ -148,8 +148,8 @@
 		};
 	};
 
-	soc@01c00000 {
-		emac: ethernet@01c0b000 {
+	soc@1c00000 {
+		emac: ethernet@1c0b000 {
 			compatible = "allwinner,sun4i-a10-emac";
 			reg = <0x01c0b000 0x1000>;
 			interrupts = <55>;
@@ -158,7 +158,7 @@
 			status = "disabled";
 		};
 
-		mdio: mdio@01c0b080 {
+		mdio: mdio@1c0b080 {
 			compatible = "allwinner,sun4i-a10-mdio";
 			reg = <0x01c0b080 0x14>;
 			status = "disabled";
@@ -166,7 +166,7 @@
 			#size-cells = <0>;
 		};
 
-		pwm: pwm@01c20e00 {
+		pwm: pwm@1c20e00 {
 			compatible = "allwinner,sun5i-a10s-pwm";
 			reg = <0x01c20e00 0xc>;
 			clocks = <&osc24M>;
@@ -174,7 +174,7 @@
 			status = "disabled";
 		};
 
-		uart0: serial@01c28000 {
+		uart0: serial@1c28000 {
 			compatible = "snps,dw-apb-uart";
 			reg = <0x01c28000 0x400>;
 			interrupts = <1>;
@@ -184,7 +184,7 @@
 			status = "disabled";
 		};
 
-		uart2: serial@01c28800 {
+		uart2: serial@1c28800 {
 			compatible = "snps,dw-apb-uart";
 			reg = <0x01c28800 0x400>;
 			interrupts = <3>;

@@ -148,7 +148,7 @@
 		};
 	};
 
-	qcom,spm@0xb012000 {
+	qcom,spm@b012000 {
 		compatible = "qcom,spm-v2";
 		#address-cells = <1>;
 		#size-cells = <1>;

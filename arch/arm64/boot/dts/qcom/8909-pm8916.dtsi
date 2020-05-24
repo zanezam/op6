@@ -107,7 +107,7 @@
 		vdd_sr2_pll-supply = <&pm8916_l7_ao>;
 	};
 
-	qcom,clock-a7@0b011050 {
+	qcom,clock-a7@b011050 {
 		cpu-vdd-supply = <&apc_vreg_corner>;
 		qcom,speed0-bin-v0 =
 			<          0 0>,

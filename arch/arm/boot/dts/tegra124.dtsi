@@ -14,7 +14,7 @@
 	#address-cells = <2>;
 	#size-cells = <2>;
 
-	pcie-controller@01003000 {
+	pcie-controller@1003000 {
 		compatible = "nvidia,tegra124-pcie";
 		device_type = "pci";
 		reg = <0x0 0x01003000 0x0 0x00000800   /* PADS registers */

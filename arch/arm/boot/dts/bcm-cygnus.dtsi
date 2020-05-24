@@ -91,7 +91,7 @@
 		#address-cells = <1>;
 		#size-cells = <1>;
 
-		pcie_phy: phy@0301d0a0 {
+		pcie_phy: phy@301d0a0 {
 			compatible = "brcm,cygnus-pcie-phy";
 			reg = <0x0301d0a0 0x14>;
 			#address-cells = <1>;
@@ -108,13 +108,13 @@
 			};
 		};
 
-		pinctrl: pinctrl@0x0301d0c8 {
+		pinctrl: pinctrl@301d0c8 {
 			compatible = "brcm,cygnus-pinmux";
 			reg = <0x0301d0c8 0x30>,
 			      <0x0301d24c 0x2c>;
 		};
 
-		gpio_crmu: gpio@03024800 {
+		gpio_crmu: gpio@3024800 {
 			compatible = "brcm,cygnus-crmu-gpio";
 			reg = <0x03024800 0x50>,
 			      <0x03024008 0x18>;

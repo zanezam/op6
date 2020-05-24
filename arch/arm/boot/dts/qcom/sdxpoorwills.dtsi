@@ -943,7 +943,7 @@
 		mboxes = <&apps_rsc 0>;
 	};
 
-	ipa_hw: qcom,ipa@01e00000 {
+	ipa_hw: qcom,ipa@1e00000 {
 		compatible = "qcom,ipa";
 		reg = <0x1e00000 0x34000>,
 		      <0x1e04000 0x28000>;
@@ -1353,7 +1353,7 @@
 #include "sdxpoorwills-coresight.dtsi"
 
 &soc {
-	emac_hw: qcom,emac@00020000 {
+	emac_hw: qcom,emac@20000 {
 		compatible = "qcom,emac-dwc-eqos";
 		qcom,arm-smmu;
 		emac-core-version = <1>;

@@ -316,7 +316,7 @@
 /* CPR controlled regulator */
 
 &soc {
-	mem_acc_vreg_corner: regulator@01946004 {
+	mem_acc_vreg_corner: regulator@1946004 {
 		compatible = "qcom,mem-acc-regulator";
 		reg = <0xa4000 0x1000>;
 		reg-names = "efuse_addr";

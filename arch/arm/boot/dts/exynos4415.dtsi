@@ -84,7 +84,7 @@
 		#size-cells = <1>;
 		ranges;
 
-		sysram@02020000 {
+		sysram@2020000 {
 			compatible = "mmio-sram";
 			reg = <0x02020000 0x50000>;
 			#address-cells = <1>;
@@ -102,7 +102,7 @@
 			};
 		};
 
-		pinctrl_2: pinctrl@03860000 {
+		pinctrl_2: pinctrl@3860000 {
 			compatible = "samsung,exynos4415-pinctrl";
 			reg = <0x03860000 0x1000>;
 			interrupts = <0 242 0>;
@@ -610,7 +610,7 @@
 			status = "disabled";
 		};
 
-		clock_audss: clock-controller@03810000 {
+		clock_audss: clock-controller@3810000 {
 			compatible = "samsung,exynos4210-audss-clock";
 			reg = <0x03810000 0x0C>;
 			#clock-cells = <1>;

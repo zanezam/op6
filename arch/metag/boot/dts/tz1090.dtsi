@@ -28,7 +28,7 @@
 		#size-cells = <1>;
 		ranges;
 
-		pdc: pdc@0x02006000 {
+		pdc: pdc@2006000 {
 			interrupt-controller;
 			#interrupt-cells = <2>;
 
@@ -44,19 +44,19 @@
 			             <31 IRQ_TYPE_LEVEL_HIGH>; /* Perip 2 (WDT) */
 		};
 
-		pinctrl: pinctrl@02005800 {
+		pinctrl: pinctrl@2005800 {
 			#gpio-range-cells = <3>;
 			compatible = "img,tz1090-pinctrl";
 			reg = <0x02005800 0xe4>;
 		};
 
-		pdc_pinctrl: pinctrl@02006500 {
+		pdc_pinctrl: pinctrl@2006500 {
 			#gpio-range-cells = <3>;
 			compatible = "img,tz1090-pdc-pinctrl";
 			reg = <0x02006500 0x100>;
 		};
 
-		gpios: gpios@02005800 {
+		gpios: gpios@2005800 {
 			#address-cells = <1>;
 			#size-cells = <0>;
 			compatible = "img,tz1090-gpio";
@@ -91,7 +91,7 @@
 			};
 		};
 
-		pdc_gpios: gpios@02006500 {
+		pdc_gpios: gpios@2006500 {
 			gpio-controller;
 			#gpio-cells = <2>;
 

@@ -77,7 +77,7 @@
 			next-level-cache = <&CLUSTER0_L2>;
 		};
 
-		CLUSTER0_L2: l2-cache@000 {
+		CLUSTER0_L2: l2-cache@0 {
 			compatible = "cache";
 		};
 	};

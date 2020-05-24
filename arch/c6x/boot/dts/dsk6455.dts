@@ -55,7 +55,7 @@
 			interrupts = < 69 >;
 		};
 
-		clock-controller@029a0000 {
+		clock-controller@29a0000 {
 			clock-frequency = <50000000>;
 		};
 	};
