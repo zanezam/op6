@@ -11,6 +11,16 @@ echo "westwood" > /proc/sys/net/ipv4/tcp_congestion_control
 # Tweak IO performance after boot complete
 echo "zen" > /sys/block/sda/queue/scheduler
 echo 512 > /sys/block/sda/queue/read_ahead_kb
+echo "zen" > /sys/block/sdb/queue/scheduler
+echo 512 > /sys/block/sdb/queue/read_ahead_kb
+echo "zen" > /sys/block/sdc/queue/scheduler
+echo 512 > /sys/block/sdc/queue/read_ahead_kb
+echo "zen" > /sys/block/sdd/queue/scheduler
+echo 512 > /sys/block/sdd/queue/read_ahead_kb
+echo "zen" > /sys/block/sde/queue/scheduler
+echo 512 > /sys/block/sde/queue/read_ahead_kb
+echo "zen" > /sys/block/sdf/queue/scheduler
+echo 512 > /sys/block/sdf/queue/read_ahead_kb
 
 # Input boost and stune configuration
 echo "0:1056000 1:0 2:0 3:0 4:0 5:0 6:0 7:0" > /sys/module/cpu_boost/parameters/input_boost_freq
