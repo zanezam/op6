@@ -241,7 +241,7 @@ Tegra30:
 
 SoC DTSI:
 
-	pcie-controller@00003000 {
+	pcie-controller@3000 {
 		compatible = "nvidia,tegra30-pcie";
 		device_type = "pci";
 		reg = <0x00003000 0x00000800   /* PADS registers */
@@ -320,7 +320,7 @@ SoC DTSI:
 
 Board DTS:
 
-	pcie-controller@00003000 {
+	pcie-controller@3000 {
 		status = "okay";
 
 		avdd-pexa-supply = <&ldo1_reg>;
@@ -346,7 +346,7 @@ Tegra124:
 
 SoC DTSI:
 
-	pcie-controller@01003000 {
+	pcie-controller@1003000 {
 		compatible = "nvidia,tegra124-pcie";
 		device_type = "pci";
 		reg = <0x0 0x01003000 0x0 0x00000800   /* PADS registers */
@@ -411,7 +411,7 @@ SoC DTSI:
 
 Board DTS:
 
-	pcie-controller@01003000 {
+	pcie-controller@1003000 {
 		status = "okay";
 
 		avddio-pex-supply = <&vdd_1v05_run>;

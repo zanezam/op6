@@ -16,7 +16,7 @@ please check:
 	* dma/dma.txt
 
 Example:
-	i2s0: i2s0@0b005000 {
+	i2s0: i2s0@b005000 {
 		#sound-dai-cells = <0>;
 		compatible = "zte,zx296702-i2s";
 		reg = <0x0b005000 0x1000>;

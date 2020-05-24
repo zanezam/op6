@@ -185,7 +185,7 @@ to specify in a pin configuration subnode:
 
 Example:
 
-	tlmm: pinctrl@03400000 {
+	tlmm: pinctrl@3400000 {
 		compatible = "qcom,sdm845-pinctrl";
 		reg = <0x03800000 0xc00000>, <0x179900f0 0x60>;
 		reg-names = "pinctrl_regs", "spi_cfg_regs";

@@ -10,7 +10,7 @@ Optional properties:
 - ce-gpios: GPIO connected to the CE (chip enable) pin of the chip
 
 Example:
-	i2c@00000000 {
+	i2c@0 {
 		touchscreen: melfas_mip4@48 {
 			compatible = "melfas,mip4_ts";
 			reg = <0x48>;

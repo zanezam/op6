@@ -14,7 +14,7 @@ Optional properties:
 
 Example:
 
-	i2c@00000000 {
+	i2c@0 {
 		/* ... */
 
 		zforce_ts@50 {

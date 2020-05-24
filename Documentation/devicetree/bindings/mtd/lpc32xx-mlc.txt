@@ -39,7 +39,7 @@ Example:
 		nxp,wr-low = <83333333>;
 		gpios = <&gpio 5 19 1>; /* GPO_P3 19, active low */
 
-		mtd0@00000000 {
+		mtd0@0 {
 			label = "boot";
 			reg = <0x00000000 0x00064000>;
 			read-only;

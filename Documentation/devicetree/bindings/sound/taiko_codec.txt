@@ -305,7 +305,7 @@ i2c@f9925000 {
 	qcom,i2c-bus-freq = <100000>;
 	qcom,i2c-src-freq = <24000000>;
 
-	wcd9xxx_codec@0d{
+	wcd9xxx_codec@d{
 		compatible = "qcom,wcd9xxx-i2c";
 		reg = <0x0d>;
 		qcom,cdc-reset-gpio = <&msmgpio 22 0>;

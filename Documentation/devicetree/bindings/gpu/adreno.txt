@@ -304,7 +304,7 @@ Documentation/devicetree/bindings/coresight/coresight.txt
 Example of A330 GPU in MSM8916:
 
 &soc {
-	msm_gpu: qcom,kgsl-3d0@01c00000 {
+	msm_gpu: qcom,kgsl-3d0@1c00000 {
 		label = "kgsl-3d0";
 		compatible = "qcom,kgsl-3d0", "qcom,kgsl-3d";
 		reg = <0x01c00000 0x10000

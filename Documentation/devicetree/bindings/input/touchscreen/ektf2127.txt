@@ -14,7 +14,7 @@ For additional optional properties see: touchscreen.txt
 
 Example:
 
-i2c@00000000 {
+i2c@0 {
 	ektf2127: touchscreen@15 {
 		compatible = "elan,ektf2127";
 		reg = <0x15>;
