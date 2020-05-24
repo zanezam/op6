@@ -178,7 +178,7 @@
 			interrupts = <0 50 0>;
 		};
 
-		pinctrl_3: pinctrl@03860000 {
+		pinctrl_3: pinctrl@3860000 {
 			compatible = "samsung,exynos5410-pinctrl";
 			reg = <0x03860000 0x1000>;
 			interrupts = <0 47 0>;

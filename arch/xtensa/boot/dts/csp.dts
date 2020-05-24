@@ -43,7 +43,7 @@
 		compatible = "simple-bus";
 		ranges = <0x00000000 0xf0000000 0x10000000>;
 
-		uart0: serial@0d000000 {
+		uart0: serial@d000000 {
 			compatible = "xlnx,xuartps", "cdns,uart-r1p8";
 			clocks = <&osc>, <&osc>;
 			clock-names = "uart_clk", "pclk";

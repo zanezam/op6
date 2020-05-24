@@ -103,7 +103,7 @@
 		/delete-property/ vdd_pronto_pll-supply;
 	};
 
-	qcom,wcnss-wlan@0a000000 {
+	qcom,wcnss-wlan@a000000 {
 		/delete-property/ qcom,pronto-vddmx-supply;
 		/delete-property/ qcom,pronto-vddcx-supply;
 		/delete-property/ qcom,pronto-vddpx-supply;
@@ -315,7 +315,7 @@
 		vdd_pronto_pll-supply = <&pm8953_l7>;
 	};
 
-	qcom,wcnss-wlan@0a000000 {
+	qcom,wcnss-wlan@a000000 {
 		qcom,pronto-vddmx-supply = <&pm8953_s7_level_ao>;
 		qcom,pronto-vddcx-supply = <&pm8953_s2_level>;
 		qcom,pronto-vddpx-supply = <&pm8953_l5>;

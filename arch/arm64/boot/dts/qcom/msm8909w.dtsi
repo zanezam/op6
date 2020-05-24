@@ -12,7 +12,7 @@
 
 &soc {
 	/delete-node/ qcom,clock-a7@0b011050;
-	clock_cpu: qcom,clock-a7@0b011050 {
+	clock_cpu: qcom,clock-a7@b011050 {
 		compatible = "qcom,clock-a53-8916";
 		reg = <0x0b011050 0x8>,
 		      <0x0005c00c 0x8>;

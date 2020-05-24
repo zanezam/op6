@@ -34,7 +34,7 @@
 	soc {
 		/include/ "keystone-k2l-clocks.dtsi"
 
-		uart2: serial@02348400 {
+		uart2: serial@2348400 {
 			compatible = "ns16550a";
 			current-speed = <115200>;
 			reg-shift = <2>;
@@ -44,7 +44,7 @@
 			interrupts = <GIC_SPI 432 IRQ_TYPE_EDGE_RISING>;
 		};
 
-		uart3:	serial@02348800 {
+		uart3:	serial@2348800 {
 			compatible = "ns16550a";
 			current-speed = <115200>;
 			reg-shift = <2>;
@@ -54,7 +54,7 @@
 			interrupts = <GIC_SPI 435 IRQ_TYPE_EDGE_RISING>;
 		};
 
-		k2l_pmx: pinmux@02620690 {
+		k2l_pmx: pinmux@2620690 {
 			compatible = "pinctrl-single";
 			reg = <0x02620690 0xc>;
 			#address-cells = <1>;
@@ -203,7 +203,7 @@
 			};
 		};
 
-		dspgpio0: keystone_dsp_gpio@02620240 {
+		dspgpio0: keystone_dsp_gpio@2620240 {
 			compatible = "ti,keystone-dsp-gpio";
 			gpio-controller;
 			#gpio-cells = <2>;

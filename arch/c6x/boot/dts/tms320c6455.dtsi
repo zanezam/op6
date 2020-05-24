@@ -67,7 +67,7 @@
 			ti,dscr-dev-enable = <4>;
 		};
 
-		clock-controller@029a0000 {
+		clock-controller@29a0000 {
 			compatible = "ti,c6455-pll", "ti,c64x+pll";
 			reg = <0x029a0000 0x200>;
 			ti,c64x+pll-bypass-delay = <1440>;

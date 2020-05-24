@@ -725,7 +725,7 @@
 		/*
 		 * DDR PLL
 		 */
-		clockgen-ddr@0xfdde07d8 {
+		clockgen-ddr@fdde07d8 {
 			reg = <0xfdde07d8 0x110>;
 
 			clockgen_ddr_pll: clockgen-ddr-pll {

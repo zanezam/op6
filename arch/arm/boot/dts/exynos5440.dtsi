@@ -187,7 +187,7 @@
 		clock-names = "watchdog";
 	};
 
-	gmac: ethernet@00230000 {
+	gmac: ethernet@230000 {
 		compatible = "snps,dwmac-3.70a";
 		reg = <0x00230000 0x8000>;
 		interrupt-parent = <&gic>;

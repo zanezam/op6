@@ -232,7 +232,7 @@
 		status = "disabled";
 	};
 
-	cam_jpeg_dma: qcom,jpegdma@0xac52000 {
+	cam_jpeg_dma: qcom,jpegdma@ac52000 {
 		status = "disabled";
 	};
 

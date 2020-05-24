@@ -1073,7 +1073,7 @@
 		clock-names = "apb_pclk";
 	};
 
-	hwevent: hwevent@0x014066f0 {
+	hwevent: hwevent@14066f0 {
 		compatible = "qcom,coresight-hwevent";
 		reg = <0x14066f0 0x4>,
 		      <0x14166f0 0x4>,

@@ -173,7 +173,7 @@
 		HSUSB_3p3-supply = <&pm660_l16>;
 	};
 
-	qcom,clock-a7@0b011050 {
+	qcom,clock-a7@b011050 {
 		cpu-vdd-supply = <&apc_vreg_corner>;
 	};
 

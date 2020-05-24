@@ -27,14 +27,14 @@
 		#size-cells = <1>;
 		ranges;
 
-		peripheral1_mem: peripheral1_region@0x87800000 {
+		peripheral1_mem: peripheral1_region@87800000 {
 			compatible = "removed-dma-pool";
 			no-map;
 			reg = <0x87800000 0x400000>;
 			label = "peripheral1_mem";
 		};
 
-		peripheral2_mem: peripheral2_region@0x87d00000 {
+		peripheral2_mem: peripheral2_region@87d00000 {
 			compatible = "removed-dma-pool";
 			no-map;
 			reg = <0x87d00000 0x300000>;
@@ -200,7 +200,7 @@
 		#clock-cells = <1>;
 	};
 
-	clock_cpu: qcom,clock-a7@0b010008 {
+	clock_cpu: qcom,clock-a7@b010008 {
 		compatible = "qcom,clock-a7-9650";
 		reg = <0x0b010008 0x8>;
 		reg-names = "rcg-base";
@@ -548,7 +548,7 @@
 		clock-names = "iface_clk";
 	};
 
-	qcom_tzlog: tz-log@08600720 {
+	qcom_tzlog: tz-log@8600720 {
 		compatible = "qcom,tz-log";
 		reg = <0x08600720 0x2000>;
 	};
@@ -639,7 +639,7 @@
 		qcom,rmnet-ipa-ssr;
 	};
 
-	ipa_hw: qcom,ipa@07b00000 {
+	ipa_hw: qcom,ipa@7b00000 {
 		compatible = "qcom,ipa";
 		reg =
 			<0x07b00000 0x34000>,

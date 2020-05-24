@@ -312,7 +312,7 @@
 };
 
 &soc {
-	mem_acc_vreg_corner: regulator@01946004 {
+	mem_acc_vreg_corner: regulator@1946004 {
 		compatible = "qcom,mem-acc-regulator";
 		regulator-name = "mem_acc_corner";
 		regulator-min-microvolt = <1>;

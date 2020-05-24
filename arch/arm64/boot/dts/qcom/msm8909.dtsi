@@ -386,7 +386,7 @@
 		#clock-cells = <1>;
 	};
 
-	clock_cpu: qcom,clock-a7@0b011050 {
+	clock_cpu: qcom,clock-a7@b011050 {
 		compatible = "qcom,clock-a53-8916";
 		reg = <0x0b011050 0x8>,
 		      <0x0005c00c 0x8>;
@@ -889,7 +889,7 @@
 		reset-names = "core_reset", "phy_reset", "phy_por_reset";
 	};
 
-	android_usb: android_usb@086000c8 {
+	android_usb: android_usb@86000c8 {
 		compatible = "qcom,android-usb";
 		reg = <0x086000c8 0xc8>;
 		qcom,pm-qos-latency = <2 1001 12701>;
@@ -1090,7 +1090,7 @@
 		status = "disabled";
 	};
 
-	sdhc_2: sdhci@07864000 {
+	sdhc_2: sdhci@7864000 {
 		compatible = "qcom,sdhci-msm";
 		reg = <0x07864900 0x11c>, <0x07864000 0x800>;
 		reg-names = "hc_mem", "core_mem";

@@ -53,7 +53,7 @@
 			reg = <0x0d020004 0x4>;
 		};
 
-		serial0: serial@0d050020 {
+		serial0: serial@d050020 {
 			device_type = "serial";
 			compatible = "ns16550a";
 			no-loopback-test;
@@ -65,7 +65,7 @@
 			clocks = <&osc>;
 		};
 
-		enet0: ethoc@0d030000 {
+		enet0: ethoc@d030000 {
 			compatible = "opencores,ethoc";
 			reg = <0x0d030000 0x4000 0x0d800000 0x4000>;
 			native-endian;
@@ -74,7 +74,7 @@
 			clocks = <&osc>;
 		};
 
-		i2s0: xtfpga-i2s@0d080000 {
+		i2s0: xtfpga-i2s@d080000 {
 			#sound-dai-cells = <0>;
 			compatible = "cdns,xtfpga-i2s";
 			reg = <0x0d080000 0x40>;
@@ -82,7 +82,7 @@
 			clocks = <&cdce706 4>;
 		};
 
-		i2c0: i2c-master@0d090000 {
+		i2c0: i2c-master@d090000 {
 			compatible = "opencores,i2c-ocores";
 			#address-cells = <1>;
 			#size-cells = <0>;
@@ -102,7 +102,7 @@
 			};
 		};
 
-		spi0: spi-master@0d0a0000 {
+		spi0: spi-master@d0a0000 {
 			compatible = "cdns,xtfpga-spi";
 			#address-cells = <1>;
 			#size-cells = <0>;

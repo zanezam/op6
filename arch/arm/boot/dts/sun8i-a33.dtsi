@@ -69,8 +69,8 @@
 		reg = <0x40000000 0x80000000>;
 	};
 
-	soc@01c00000 {
-		tcon0: lcd-controller@01c0c000 {
+	soc@1c00000 {
+		tcon0: lcd-controller@1c0c000 {
 			compatible = "allwinner,sun8i-a33-tcon";
 			reg = <0x01c0c000 0x1000>;
 			interrupts = <GIC_SPI 86 IRQ_TYPE_LEVEL_HIGH>;
@@ -106,7 +106,7 @@
 			};
 		};
 
-		crypto: crypto-engine@01c15000 {
+		crypto: crypto-engine@1c15000 {
 			compatible = "allwinner,sun4i-a10-crypto";
 			reg = <0x01c15000 0x1000>;
 			interrupts = <GIC_SPI 80 IRQ_TYPE_LEVEL_HIGH>;
@@ -116,7 +116,7 @@
 			reset-names = "ahb";
 		};
 
-		fe0: display-frontend@01e00000 {
+		fe0: display-frontend@1e00000 {
 			compatible = "allwinner,sun8i-a33-display-frontend";
 			reg = <0x01e00000 0x20000>;
 			interrupts = <GIC_SPI 93 IRQ_TYPE_LEVEL_HIGH>;
@@ -144,7 +144,7 @@
 			};
 		};
 
-		be0: display-backend@01e60000 {
+		be0: display-backend@1e60000 {
 			compatible = "allwinner,sun8i-a33-display-backend";
 			reg = <0x01e60000 0x10000>, <0x01e80000 0x1000>;
 			reg-names = "be", "sat";
@@ -186,7 +186,7 @@
 			};
 		};
 
-		drc0: drc@01e70000 {
+		drc0: drc@1e70000 {
 			compatible = "allwinner,sun8i-a33-drc";
 			reg = <0x01e70000 0x10000>;
 			interrupts = <GIC_SPI 91 IRQ_TYPE_LEVEL_HIGH>;
