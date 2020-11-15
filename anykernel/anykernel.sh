@@ -27,12 +27,12 @@ ramdisk_compression=auto;
 # import patching functions/variables - see for reference
 . tools/ak3-core.sh;
 
-## Trim partitions
-$bin/busybox fstrim -v /data;
-
 ## AnyKernel file attributes
 # set permissions/ownership for included ramdisk files
 set_perm_recursive 0 0 750 750 $ramdisk/*;
+
+## Trim partitions
+$bin/busybox fstrim -v /data;
 
 ## AnyKernel install
 dump_boot;
