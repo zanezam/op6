@@ -14,7 +14,7 @@
 TC="$1"
 
 # version of this script
-SCRIPTVER="2.1"
+SCRIPTVER="2.2"
 
 # blue_spark kernel release (source-base of the build)
 BSREL="149"
@@ -140,6 +140,11 @@ pack_image()
     echo ""
 }
 
+clean_tree()
+{
+    rm -rf $SOURCEDIR/$OUTDIR
+}
+
 case "$1" in
 
 linaro)
@@ -149,8 +154,9 @@ export KBUILD_BUILD_USER=$BUILDUSER
 export KBUILD_BUILD_HOST=$BUILDHOST
 export KBUILD_COMPILER_STRING="$($LINAROTOOLCHAIN/bin/aarch64-linux-gnu-gcc -v 2>&1 | grep ' version ' | sed 's/[[:space:]]*$//')"
 print_info
-
+clean_tree
 cd $SOURCEDIR
+git checkout zzupreme-linaro
 if [ -f arch/arm64/configs/$KERNCONFIG ]; then
     make O=$OUTDIR ARCH=arm64 $KERNCONFIG
 else
@@ -185,8 +191,9 @@ export KBUILD_BUILD_USER=$BUILDUSER
 export KBUILD_BUILD_HOST=$BUILDHOST
 export KBUILD_COMPILER_STRING="$($CLANGTOOLCHAIN/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')"
 print_info
-
+clean_tree
 cd $SOURCEDIR
+git checkout zzupreme-clang
 if [ -f arch/arm64/configs/$KERNCONFIG ]; then
     make O=$OUTDIR ARCH=arm64 $KERNCONFIG
 else
@@ -215,7 +222,6 @@ pack_image
 ;;
 
 clean)
-rm -rf $SOURCEDIR/$OUTDIR
 echo ""
 cd $SOURCEDIR
 echo "Sources cleaned, checking status of repo..."
