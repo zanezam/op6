@@ -17,7 +17,7 @@ TC="$1"
 SCRIPTVER="2.2"
 
 # blue_spark kernel release (source-base of the build)
-BSREL="151"
+BSREL="152"
 
 # version of the build
 BUILDVERSION=""
