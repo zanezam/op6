@@ -1,9 +1,12 @@
 #!/system/bin/sh
 
-# (c) 2018-2020 changes for blu_spark by eng.stk
+# (c) 2018-2021 changes for blu_spark by eng.stk
 
 # Wait to set proper init values
 sleep 30
+
+# Disable zram
+swapoff /dev/block/zram0
 
 # Set TCP congestion algorithm
 echo "westwood" > /proc/sys/net/ipv4/tcp_congestion_control
@@ -48,5 +51,12 @@ echo 1 > /sys/class/power_supply/usb/otg_switch
 
 # Disable swap file
 swapoff /data/vendor/swap/swapfile
+
+# Set zram config
+echo 1 > /sys/block/zram0/reset
+echo "lzo-rle" > /sys/block/zram0/comp_algorithm
+echo 2202009600 > /sys/block/zram0/disksize
+mkswap /dev/block/zram0
+swapon /dev/block/zram0 -p 32758
 
 echo "Boot blu_spark completed " >> /dev/kmsg
